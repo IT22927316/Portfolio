@@ -218,7 +218,7 @@ const Features = () => {
             </div>
 
             <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh] mt-10">
-            <BentoCard 
+            <BentoCard
                         title={
                             <div className="flex justify-between items-center">
                                 <p className="!text-black">Licenses & Certificates</p>
@@ -237,7 +237,7 @@ const Features = () => {
                                 popupdesc: 'I completed both my A/Ls in the Physical Science stream and O/Ls at Mahinda College, gaining a solid foundation in analytical thinking, IT, and business principles.'
                             },
                             {
-                                src: 'certificates/accenture.jpeg',
+                                src: 'certificates/aliosnimg.webp',
                                 popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
                             },
                         ]}
