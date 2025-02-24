@@ -169,11 +169,11 @@ const Features = () => {
                             images={[
                                 {
                                     src: 'certificates/futurelearn.webp',
-                                    popupdesc: 'I’m pursuing a BSc Honours in IT, specializing in Software Engineering at SLIIT, now in my third year, focusing on software development and engineering'
+                                    popupdesc: 'I have successfully completed and received the "Introduction to Physical Computing" certificate.'
                                 },
                                 {
                                     src: 'certificates/accenture2.webp',
-                                    popupdesc: 'I completed both my A/Ls in the Physical Science stream and O/Ls at Mahinda College, gaining a solid foundation in analytical thinking, IT, and business principles.'
+                                    popupdesc: 'I have successfully completed the "Digital Skills: Artificial Intelligence" and "Digital Skills: User Experience" courses by Accenture'
                                 },
                                 {
                                     src: 'certificates/alison.webp',
@@ -181,11 +181,11 @@ const Features = () => {
                                 },
                                 {
                                     src: 'certificates/simpli.webp',
-                                    popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                                    popupdesc: 'I have completed certifications in "Become a Web Developer: Introduction to jQuery","Full-Stack Development 101","Introduction to Generative AI Studio","Introduction to MERN Stack."...etc.'
                                 },
                                 {
                                     src: 'certificates/semrush.webp',
-                                    popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                                    popupdesc: 'I have completed the "SEO Principles: An Essential Guide for Beginners" and "Become an AI-Powered Marketer" certifications from Semrush.'
                                 },
                                 {
                                     src: 'certificates/pmi.webp',
@@ -216,7 +216,7 @@ const Features = () => {
                         }
                         images={[
                             { 
-                                src: "img/gaming.jpg", 
+                                src: "img/gaming.webp", 
                                 popupdesc: "I am passionate about gaming, which allows me to unwind and immerse myself in various virtual worlds and challenges" 
                             },
                             { 
