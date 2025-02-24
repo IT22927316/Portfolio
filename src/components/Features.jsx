@@ -244,6 +244,10 @@ const Features = () => {
                                 src: 'certificates/simpli.webp',
                                 popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
                             },
+                            {
+                                src: 'certificates/semrush.webp',
+                                popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                            },
                         ]}
                     />
             </BentoTilt>
