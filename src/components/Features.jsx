@@ -233,11 +233,11 @@ const Features = () => {
                                 popupdesc: 'I’m pursuing a BSc Honours in IT, specializing in Software Engineering at SLIIT, now in my third year, focusing on software development and engineering'
                             },
                             {
-                                src: 'img/schoollogo.jpg',
+                                src: 'certificates/accenture.jpeg',
                                 popupdesc: 'I completed both my A/Ls in the Physical Science stream and O/Ls at Mahinda College, gaining a solid foundation in analytical thinking, IT, and business principles.'
                             },
                             {
-                                src: 'img/uomcodl.png',
+                                src: 'certificates/accenture.jpeg',
                                 popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
                             },
                         ]}
