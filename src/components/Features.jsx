@@ -229,7 +229,7 @@ const Features = () => {
                         }
                         images={[
                             {
-                                src: 'certificates/pmi2.png',
+                                src: 'certificates/pmi.webp',
                                 popupdesc: 'I’m pursuing a BSc Honours in IT, specializing in Software Engineering at SLIIT, now in my third year, focusing on software development and engineering'
                             },
                             {
