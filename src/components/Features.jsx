@@ -250,11 +250,11 @@ const Features = () => {
                         images={[
                             {
                                 src: 'img/sliit.webp',
-                                popupdesc: 'I’m pursuing a BSc Honours in IT, specializing in Software Engineering at SLIIT, now in my third year, focusing on software development and engineering'
+                                popupdesc: 'I am currently pursuing a Bachelor of Science (Honours) in Information Technology with a specialization in Software Engineering at SLIIT. Now in my third year, I am deeply focused on advancing my expertise in software development, engineering principles, and cutting-edge technologies to build innovative and efficient software solutions.'
                             },
                             {
                                 src: 'img/mahindac.webp',
-                                popupdesc: 'I completed both my A/Ls in the Physical Science stream and O/Ls at Mahinda College, gaining a solid foundation in analytical thinking, IT, and business principles.'
+                                popupdesc: 'I successfully completed my Advanced Level examinations in the Physical Science stream and my Ordinary Level examinations at Mahinda College, establishing a strong foundation in analytical thinking, information technology, and business principles.'
                             },
                         ]}
                     />
