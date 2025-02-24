@@ -216,16 +216,16 @@ const Features = () => {
                         }
                         images={[
                             { 
-                                src: "img/gaming.webp", 
-                                popupdesc: "I am passionate about gaming, which allows me to unwind and immerse myself in various virtual worlds and challenges" 
+                                src: "img/chessimg.webp", 
+                                popupdesc: "I enjoy playing chess, which helps enhance my strategic thinking and problem-solving skills" 
                             },
                             { 
                                 src: "img/diecast1.webp", 
                                 popupdesc: "One of my hobbies is collecting diecast cars, where I appreciate the craftsmanship and attention to detail in each model" 
                             },
                             { 
-                                src: "img/chessimg.webp", 
-                                popupdesc: "I enjoy playing chess, which helps enhance my strategic thinking and problem-solving skills" 
+                                src: "img/gaming.webp", 
+                                popupdesc: "I am passionate about gaming, which allows me to unwind and immerse myself in various virtual worlds and challenges" 
                             },
                             { 
                                 src: "img/films.webp", 
