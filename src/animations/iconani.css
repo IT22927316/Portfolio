@@ -52,7 +52,6 @@
     object-fit: cover;
 }
 
-
 .automated-slider::before, .automated-slider::after {
     content: "";
     position: absolute;
@@ -61,8 +60,21 @@
     height: 100%;
     pointer-events: none;
     z-index: 2;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    transition: background 0.3s ease;
 }
 
+/* Position the left fade */
+.automated-slider::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Position the right fade */
+.automated-slider::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+}
 
 @keyframes autoRun {
     0% {
@@ -77,15 +89,7 @@
     animation-play-state: paused !important;
 }
 
-
-/* -----transparent background code ---
-.automated-slider::before {
-    left: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+/* Fade-away effect */
+.automated-slider:hover::before, .automated-slider:hover::after {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
 }
-
-.automated-slider::after {
-    right: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-}
-*/
