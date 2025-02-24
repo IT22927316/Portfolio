@@ -149,7 +149,7 @@ const Features = () => {
                         title={<><p className="!text-black">RUSIRU<br />KALENDRA<br />DE SILVA</p></>}
                         images={[
                             { 
-                                src: 'img/pp.jpg', 
+                                src: 'img/pp.webp', 
                                 popupdesc: 'Hi, I’m Rusiru (He/Him), a creative developer passionate about blending web development and UI/UX design to craft intuitive and user-focused digital experiences. I enjoy solving complex design challenges and building interfaces that are both functional and visually engaging.' 
                             }
                         ]}
@@ -220,15 +220,15 @@ const Features = () => {
                                 popupdesc: "I am passionate about gaming, which allows me to unwind and immerse myself in various virtual worlds and challenges" 
                             },
                             { 
-                                src: "img/diecast1.jpg", 
+                                src: "img/diecast1.webp", 
                                 popupdesc: "One of my hobbies is collecting diecast cars, where I appreciate the craftsmanship and attention to detail in each model" 
                             },
                             { 
-                                src: "img/chessimg.jpg", 
+                                src: "img/chessimg.webp", 
                                 popupdesc: "I enjoy playing chess, which helps enhance my strategic thinking and problem-solving skills" 
                             },
                             { 
-                                src: "img/films.jpg", 
+                                src: "img/films.webp", 
                                 popupdesc: "I also enjoy watching films and related content, appreciating storytelling and cinematic art across various genres" 
                             }
                         ]}
