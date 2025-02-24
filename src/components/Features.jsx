@@ -221,7 +221,7 @@ const Features = () => {
             <BentoCard 
                         title={
                             <div className="flex justify-between items-center">
-                                <p className="!text-black">Education</p>
+                                <p className="!text-black">Licenses & Certificates</p>
                                 <button className="text-white !font-circular-web uppercase bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded-md text-sm">
                                     Click Me
                                 </button>
@@ -229,7 +229,7 @@ const Features = () => {
                         }
                         images={[
                             {
-                                src: 'certificates/accenture.jpeg',
+                                src: 'certificates/pmi2.png',
                                 popupdesc: 'I’m pursuing a BSc Honours in IT, specializing in Software Engineering at SLIIT, now in my third year, focusing on software development and engineering'
                             },
                             {
