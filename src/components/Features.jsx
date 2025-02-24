@@ -256,6 +256,10 @@ const Features = () => {
                                 src: 'certificates/hplife.webp',
                                 popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
                             },
+                            {
+                                src: 'certificates/moracodl.webp',
+                                popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                            },
                         ]}
                     />
             </BentoTilt>
