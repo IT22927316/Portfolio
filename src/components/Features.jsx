@@ -173,31 +173,31 @@ const Features = () => {
                                 },
                                 {
                                     src: 'certificates/accenture2.webp',
-                                    popupdesc: 'I have successfully completed the "Digital Skills: Artificial Intelligence" and "Digital Skills: User Experience" courses by Accenture'
+                                    popupdesc: 'I have  completed the "Digital Skills: Artificial Intelligence" and "Digital Skills: User Experience" courses by Accenture'
                                 },
                                 {
                                     src: 'certificates/alison.webp',
-                                    popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                                    popupdesc: 'I have completed the "Guide to UI UX Wireframing" certification from Alison.'
                                 },
                                 {
                                     src: 'certificates/simpli.webp',
-                                    popupdesc: 'I have completed certifications in "Become a Web Developer: Introduction to jQuery","Full-Stack Development 101","Introduction to Generative AI Studio","Introduction to MERN Stack."...etc.'
+                                    popupdesc: 'I have successfully completed certifications in "Become a Web Developer: Introduction to jQuery","Full-Stack Development 101","Introduction to Generative AI Studio","Introduction to MERN Stack."...etc.'
                                 },
                                 {
                                     src: 'certificates/semrush.webp',
-                                    popupdesc: 'I have completed the "SEO Principles: An Essential Guide for Beginners" and "Become an AI-Powered Marketer" certifications from Semrush.'
+                                    popupdesc: 'I have successfully completed the "SEO Principles: An Essential Guide for Beginners" and "Become an AI-Powered Marketer" certifications from Semrush.'
                                 },
                                 {
                                     src: 'certificates/pmi.webp',
-                                    popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                                    popupdesc: 'I have successfully completed the "Generative AI Overview for Project Managers" certification from the Project Management Institute.'
                                 },
                                 {
                                     src: 'certificates/hplife.webp',
-                                    popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                                    popupdesc: 'I have successfully completed the "Effective Leadership," "Agile Project Management," and "Data Science & Analytics" certifications from HP LIFE.'
                                 },
                                 {
                                     src: 'certificates/moracodl.webp',
-                                    popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                                    popupdesc: 'I have completed the "Web Development - 2. Front-End Web Development," "Web Development - 1. Web Design for Beginners," and "Agile Project Management in ICT Projects" certifications from the University of Moratuwa.'
                                 },
                             ]}
                     />
