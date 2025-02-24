@@ -157,25 +157,49 @@ const Features = () => {
                 </BentoTilt>
 
                 <BentoTilt className='bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0'>
-                    <BentoCard 
-                        title={
-                            <div className="flex justify-between items-center">
-                                <p className="!text-black">Education</p>
-                                <button className="text-white !font-circular-web uppercase bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded-md text-sm">
-                                    Click Me
-                                </button>
-                            </div>
-                        }
-                        images={[
-                            {
-                                src: 'img/sliiitmage.jpg',
-                                popupdesc: 'I’m pursuing a BSc Honours in IT, specializing in Software Engineering at SLIIT, now in my third year, focusing on software development and engineering'
-                            },
-                            {
-                                src: 'img/schoollogo.jpg',
-                                popupdesc: 'I completed both my A/Ls in the Physical Science stream and O/Ls at Mahinda College, gaining a solid foundation in analytical thinking, IT, and business principles.'
-                            },
-                        ]}
+                    <BentoCard
+                            title={
+                                <div className="flex justify-between items-center">
+                                    <p className="!text-black">Licenses & Certificates</p>
+                                    <button className="text-white !font-circular-web uppercase bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded-md text-sm">
+                                        Click Me
+                                    </button>
+                                </div>
+                            }
+                            images={[
+                                {
+                                    src: 'certificates/futurelearn.webp',
+                                    popupdesc: 'I’m pursuing a BSc Honours in IT, specializing in Software Engineering at SLIIT, now in my third year, focusing on software development and engineering'
+                                },
+                                {
+                                    src: 'certificates/accenture2.webp',
+                                    popupdesc: 'I completed both my A/Ls in the Physical Science stream and O/Ls at Mahinda College, gaining a solid foundation in analytical thinking, IT, and business principles.'
+                                },
+                                {
+                                    src: 'certificates/alison.webp',
+                                    popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                                },
+                                {
+                                    src: 'certificates/simpli.webp',
+                                    popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                                },
+                                {
+                                    src: 'certificates/semrush.webp',
+                                    popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                                },
+                                {
+                                    src: 'certificates/pmi.webp',
+                                    popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                                },
+                                {
+                                    src: 'certificates/hplife.webp',
+                                    popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                                },
+                                {
+                                    src: 'certificates/moracodl.webp',
+                                    popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                                },
+                            ]}
                     />
                 </BentoTilt>
 
@@ -214,10 +238,10 @@ const Features = () => {
             </div>
 
             <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh] mt-10">
-            <BentoCard
+                <BentoCard 
                         title={
                             <div className="flex justify-between items-center">
-                                <p className="!text-black">Licenses & Certificates</p>
+                                <p className="!text-black">Education</p>
                                 <button className="text-white !font-circular-web uppercase bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded-md text-sm">
                                     Click Me
                                 </button>
@@ -225,36 +249,12 @@ const Features = () => {
                         }
                         images={[
                             {
-                                src: 'certificates/futurelearn.webp',
+                                src: 'img/sliit.webp',
                                 popupdesc: 'I’m pursuing a BSc Honours in IT, specializing in Software Engineering at SLIIT, now in my third year, focusing on software development and engineering'
                             },
                             {
-                                src: 'certificates/accenture2.webp',
+                                src: 'img/schoollogo.jpg',
                                 popupdesc: 'I completed both my A/Ls in the Physical Science stream and O/Ls at Mahinda College, gaining a solid foundation in analytical thinking, IT, and business principles.'
-                            },
-                            {
-                                src: 'certificates/alison.webp',
-                                popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
-                            },
-                            {
-                                src: 'certificates/simpli.webp',
-                                popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
-                            },
-                            {
-                                src: 'certificates/semrush.webp',
-                                popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
-                            },
-                            {
-                                src: 'certificates/pmi.webp',
-                                popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
-                            },
-                            {
-                                src: 'certificates/hplife.webp',
-                                popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
-                            },
-                            {
-                                src: 'certificates/moracodl.webp',
-                                popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
                             },
                         ]}
                     />
