@@ -6,6 +6,7 @@ import gsap from 'gsap';
 
 const navItems = [
   { label: 'Home', target: 'hero' },
+  { label: 'Journey', target: 'journey'},
   { label: 'About', target: 'about' },
   { label: 'Projects', target: 'projects' },
   { label: 'Contact', target: 'contact' },
