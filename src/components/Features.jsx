@@ -229,7 +229,7 @@ const Features = () => {
                         }
                         images={[
                             {
-                                src: 'certificates/pmi.webp',
+                                src: 'certificates/futurelearn.webp',
                                 popupdesc: 'I’m pursuing a BSc Honours in IT, specializing in Software Engineering at SLIIT, now in my third year, focusing on software development and engineering'
                             },
                             {
@@ -246,6 +246,14 @@ const Features = () => {
                             },
                             {
                                 src: 'certificates/semrush.webp',
+                                popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                            },
+                            {
+                                src: 'certificates/pmi.webp',
+                                popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                            },
+                            {
+                                src: 'certificates/hplife.webp',
                                 popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
                             },
                         ]}
