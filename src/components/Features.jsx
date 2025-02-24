@@ -160,7 +160,7 @@ const Features = () => {
                     <BentoCard
                             title={
                                 <div className="flex justify-between items-center">
-                                    <p className="!text-black">Licenses & Certificates</p>
+                                    <p className="!text-black">Certificates</p>
                                     <button className="text-white !font-circular-web uppercase bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded-md text-sm">
                                         Click Me
                                     </button>
