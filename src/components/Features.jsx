@@ -179,10 +179,6 @@ const Features = () => {
                                 src: 'img/uomcodl.png',
                                 popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
                             },
-                            {
-                                src: 'img/alison.png',
-                                popupdesc: 'In addition to my formal education, I’ve earned certifications from Alison.com, enhancing my skills in areas such as UI/UX wireframing.'
-                            }
                         ]}
                     />
                 </BentoTilt>
@@ -219,8 +215,34 @@ const Features = () => {
                     />
                 </BentoTilt>
 
-
             </div>
+
+            <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh] mt-10">
+            <BentoCard 
+                        title={
+                            <div className="flex justify-between items-center">
+                                <p className="!text-black">Education</p>
+                                <button className="text-white !font-circular-web uppercase bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded-md text-sm">
+                                    Click Me
+                                </button>
+                            </div>
+                        }
+                        images={[
+                            {
+                                src: 'certificates/accenture.jpeg',
+                                popupdesc: 'I’m pursuing a BSc Honours in IT, specializing in Software Engineering at SLIIT, now in my third year, focusing on software development and engineering'
+                            },
+                            {
+                                src: 'img/schoollogo.jpg',
+                                popupdesc: 'I completed both my A/Ls in the Physical Science stream and O/Ls at Mahinda College, gaining a solid foundation in analytical thinking, IT, and business principles.'
+                            },
+                            {
+                                src: 'img/uomcodl.png',
+                                popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
+                            },
+                        ]}
+                    />
+            </BentoTilt>
 
         </div>
         <div className='mt-10 container mx-auto px-3 md:px-10'>
