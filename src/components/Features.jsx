@@ -175,10 +175,6 @@ const Features = () => {
                                 src: 'img/schoollogo.jpg',
                                 popupdesc: 'I completed both my A/Ls in the Physical Science stream and O/Ls at Mahinda College, gaining a solid foundation in analytical thinking, IT, and business principles.'
                             },
-                            {
-                                src: 'img/uomcodl.png',
-                                popupdesc: 'I have earned certifications through CODL at the University of Moratuwa and am currently pursuing additional courses to further expand my skills'
-                            },
                         ]}
                     />
                 </BentoTilt>
