@@ -4,7 +4,7 @@ import AnimatedTitle from './AnimatedTitle';
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub, FaFacebook, FaDiscord } from 'react-icons/fa';
 import IconAnimation from '../animations/iconani';
 import IconAnimation1 from '../animations/iconani2';
-
+import Typewriter from 'typewriter-effect';
 
 const BentoTilt = ({ children, className = ''}) => {
 
@@ -144,93 +144,132 @@ const Features = () => {
             </div>
 
             <div className='grid h-[84vh] grid-cols-2 grid-rows-2 gap-7'>
-                <BentoTilt className='bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2'>
-                    <BentoCard 
-                        title={<><p className="!text-black">RUSIRU<br />KALENDRA<br />DE SILVA</p></>}
+                <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
+                    <BentoCard
+                        title={
+                        <p className="!text-black">
+                            <Typewriter
+                            options={{
+                                strings: ['RUSIRU KALENDRA DE SILVA'],
+                                autoStart: true,
+                                loop: true,
+                                delay: 150,
+                                deleteSpeed: 50,
+                            }}
+                            />
+                        </p>
+                        }
                         images={[
-                            { 
-                                src: 'img/pp.webp', 
-                                popupdesc: 'Hi, I’m Rusiru (He/Him), a creative developer passionate about blending web development and UI/UX design to craft intuitive and user-focused digital experiences. I enjoy solving complex design challenges and building interfaces that are both functional and visually engaging.' 
-                            }
+                        {
+                            src: 'img/pp.webp',
+                            popupdesc:
+                            'Hi, I’m Rusiru (He/Him), a creative developer passionate about blending web development and UI/UX design to craft intuitive and user-focused digital experiences. I enjoy solving complex design challenges and building interfaces that are both functional and visually engaging.',
+                        },
                         ]}
                     />
                 </BentoTilt>
 
-                <BentoTilt className='bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0'>
+                <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
                     <BentoCard
-                            title={
-                                <div className="flex justify-between items-center">
-                                    <p className="!text-black">Certificates</p>
-                                    <button className="text-white !font-circular-web uppercase bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded-md text-sm">
-                                        Click Me
-                                    </button>
-                                </div>
-                            }
-                            images={[
-                                {
-                                    src: 'certificates/futurelearn.webp',
-                                    popupdesc: 'I have successfully completed and received the "Introduction to Physical Computing" certificate.'
-                                },
-                                {
-                                    src: 'certificates/accenture2.webp',
-                                    popupdesc: 'I have  completed the "Digital Skills: Artificial Intelligence" and "Digital Skills: User Experience" courses by Accenture'
-                                },
-                                {
-                                    src: 'certificates/alison.webp',
-                                    popupdesc: 'I have completed the "Guide to UI UX Wireframing" certification from Alison.'
-                                },
-                                {
-                                    src: 'certificates/simpli.webp',
-                                    popupdesc: 'I have successfully completed certifications in "Become a Web Developer: Introduction to jQuery","Full-Stack Development 101","Introduction to Generative AI Studio","Introduction to MERN Stack."...etc.'
-                                },
-                                {
-                                    src: 'certificates/semrush.webp',
-                                    popupdesc: 'I have successfully completed the "SEO Principles: An Essential Guide for Beginners" and "Become an AI-Powered Marketer" certifications from Semrush.'
-                                },
-                                {
-                                    src: 'certificates/pmi.webp',
-                                    popupdesc: 'I have successfully completed the "Generative AI Overview for Project Managers" certification from the Project Management Institute.'
-                                },
-                                {
-                                    src: 'certificates/hplife.webp',
-                                    popupdesc: 'I have successfully completed the "Effective Leadership," "Agile Project Management," and "Data Science & Analytics" certifications from HP LIFE.'
-                                },
-                                {
-                                    src: 'certificates/moracodl.webp',
-                                    popupdesc: 'I have completed the "Web Development - 2. Front-End Web Development," "Web Development - 1. Web Design for Beginners," and "Agile Project Management in ICT Projects" certifications from the University of Moratuwa.'
-                                },
-                            ]}
+                        title={
+                        <div className="flex justify-between items-center">
+                            <p className="!text-black">
+                            <Typewriter
+                                options={{
+                                strings: ['Certificates'],
+                                autoStart: true,
+                                loop: true,
+                                delay: 150,
+                                deleteSpeed: 50,
+                                }}
+                            />
+                            </p>
+                            <button className="text-white !font-circular-web uppercase bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded-md text-sm">
+                            Click Me
+                            </button>
+                        </div>
+                        }
+                        images={[
+                        {
+                            src: 'certificates/futurelearn.webp',
+                            popupdesc: 'I have successfully completed and received the "Introduction to Physical Computing" certificate.',
+                        },
+                        {
+                            src: 'certificates/accenture2.webp',
+                            popupdesc: 'I have completed the "Digital Skills: Artificial Intelligence" and "Digital Skills: User Experience" courses by Accenture',
+                        },
+                        {
+                            src: 'certificates/alison.webp',
+                            popupdesc: 'I have completed the "Guide to UI UX Wireframing" certification from Alison.',
+                        },
+                        {
+                            src: 'certificates/simpli.webp',
+                            popupdesc:
+                            'I have successfully completed certifications in "Become a Web Developer: Introduction to jQuery","Full-Stack Development 101","Introduction to Generative AI Studio","Introduction to MERN Stack."...etc.',
+                        },
+                        {
+                            src: 'certificates/semrush.webp',
+                            popupdesc: 'I have successfully completed the "SEO Principles: An Essential Guide for Beginners" and "Become an AI-Powered Marketer" certifications from Semrush.',
+                        },
+                        {
+                            src: 'certificates/pmi.webp',
+                            popupdesc: 'I have successfully completed the "Generative AI Overview for Project Managers" certification from the Project Management Institute.',
+                        },
+                        {
+                            src: 'certificates/hplife.webp',
+                            popupdesc: 'I have successfully completed the "Effective Leadership," "Agile Project Management," and "Data Science & Analytics" certifications from HP LIFE.',
+                        },
+                        {
+                            src: 'certificates/moracodl.webp',
+                            popupdesc:
+                            'I have completed the "Web Development - 2. Front-End Web Development," "Web Development - 1. Web Design for Beginners," and "Agile Project Management in ICT Projects" certifications from the University of Moratuwa.',
+                        },
+                        ]}
                     />
                 </BentoTilt>
 
 
-                <BentoTilt className='bento-tilt_1 me-14 md:col-span-1 md:me-0'>
-                    <BentoCard 
+                <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+                    <BentoCard
                         title={
-                            <div className="flex justify-between items-center">
-                                <p className="!text-black">HOBBIES</p>
-                                <button className="text-white bg-blue-500 !font-circular-web uppercase hover:bg-blue-700 px-4 py-2 rounded-md text-sm">
-                                    Click Me
-                                </button>
-                            </div>
+                        <div className="flex justify-between items-center">
+                            <p className="!text-black">
+                            <Typewriter
+                                options={{
+                                strings: ['HOBBIES'],
+                                autoStart: true,
+                                loop: true,
+                                delay: 150,
+                                deleteSpeed: 50,
+                                }}
+                            />
+                            </p>
+                            <button className="text-white bg-blue-500 !font-circular-web uppercase hover:bg-blue-700 px-4 py-2 rounded-md text-sm">
+                            Click Me
+                            </button>
+                        </div>
                         }
                         images={[
-                            { 
-                                src: "img/chessimg.webp", 
-                                popupdesc: "I enjoy playing chess, which helps enhance my strategic thinking and problem-solving skills" 
-                            },
-                            { 
-                                src: "img/diecast1.webp", 
-                                popupdesc: "One of my hobbies is collecting diecast cars, where I appreciate the craftsmanship and attention to detail in each model" 
-                            },
-                            { 
-                                src: "img/gaming.webp", 
-                                popupdesc: "I am passionate about gaming, which allows me to unwind and immerse myself in various virtual worlds and challenges" 
-                            },
-                            { 
-                                src: "img/films.webp", 
-                                popupdesc: "I also enjoy watching films and related content, appreciating storytelling and cinematic art across various genres" 
-                            }
+                        {
+                            src: 'img/chessimg.webp',
+                            popupdesc:
+                            'I enjoy playing chess, which helps enhance my strategic thinking and problem-solving skills',
+                        },
+                        {
+                            src: 'img/diecast1.webp',
+                            popupdesc:
+                            'One of my hobbies is collecting diecast cars, where I appreciate the craftsmanship and attention to detail in each model',
+                        },
+                        {
+                            src: 'img/gaming.webp',
+                            popupdesc:
+                            'I am passionate about gaming, which allows me to unwind and immerse myself in various virtual worlds and challenges',
+                        },
+                        {
+                            src: 'img/films.webp',
+                            popupdesc:
+                            'I also enjoy watching films and related content, appreciating storytelling and cinematic art across various genres',
+                        },
                         ]}
                     />
                 </BentoTilt>
@@ -238,26 +277,38 @@ const Features = () => {
             </div>
 
             <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh] mt-10">
-                <BentoCard 
-                        title={
-                            <div className="flex justify-between items-center">
-                                <p className="!text-black">Education</p>
-                                <button className="text-white !font-circular-web uppercase bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded-md text-sm">
-                                    Click Me
-                                </button>
-                            </div>
-                        }
-                        images={[
-                            {
-                                src: 'img/sliit.webp',
-                                popupdesc: 'I am currently pursuing a Bachelor of Science (Honours) in Information Technology with a specialization in Software Engineering at SLIIT. Now in my third year, I am deeply focused on advancing my expertise in software development, engineering principles, and cutting-edge technologies to build innovative and efficient software solutions.'
-                            },
-                            {
-                                src: 'img/mahindac.webp',
-                                popupdesc: 'I successfully completed my Advanced Level examinations in the Physical Science stream and my Ordinary Level examinations at Mahinda College, establishing a strong foundation in analytical thinking, information technology, and business principles.'
-                            },
-                        ]}
-                    />
+                <BentoCard
+                    title={
+                    <div className="flex justify-between items-center">
+                        <p className="!text-black">
+                        <Typewriter
+                            options={{
+                            strings: ['Education'],
+                            autoStart: true,
+                            loop: true,
+                            delay: 150,
+                            deleteSpeed: 50,
+                            }}
+                        />
+                        </p>
+                        <button className="text-white !font-circular-web uppercase bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded-md text-sm">
+                        Click Me
+                        </button>
+                    </div>
+                    }
+                    images={[
+                    {
+                        src: 'img/sliit.webp',
+                        popupdesc:
+                        'I am currently pursuing a Bachelor of Science (Honours) in Information Technology with a specialization in Software Engineering at SLIIT. Now in my third year, I am deeply focused on advancing my expertise in software development, engineering principles, and cutting-edge technologies to build innovative and efficient software solutions.',
+                    },
+                    {
+                        src: 'img/mahindac.webp',
+                        popupdesc:
+                        'I successfully completed my Advanced Level examinations in the Physical Science stream and my Ordinary Level examinations at Mahinda College, establishing a strong foundation in analytical thinking, information technology, and business principles.',
+                    },
+                    ]}
+                />
             </BentoTilt>
 
         </div>

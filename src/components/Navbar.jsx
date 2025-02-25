@@ -6,22 +6,31 @@ import gsap from 'gsap';
 
 const navItems = [
   { label: 'Home', target: 'hero' },
-  { label: 'Journey', target: 'journey'},
+  { label: 'Journey', target: 'journey' },
   { label: 'About', target: 'about' },
   { label: 'Projects', target: 'projects' },
   { label: 'Contact', target: 'contact' },
 ];
 
+const scrambleText = (text) => {
+  const chars = "!@#$%^&*()_+=-<>?/[]{}ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  return text
+    .split('')
+    .map(() => chars[Math.floor(Math.random() * chars.length)])
+    .join('');
+};
+
 const Navbar = () => {
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const [isIndicatorActive, setIsIndicatorActive] = useState(false);
-
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isNavVisible, setIsNavVisible] = useState(true);
+  const [scrambledTexts, setScrambledTexts] = useState(
+    navItems.reduce((acc, item) => ({ ...acc, [item.label]: item.label }), {})
+  );
 
   const navContainerRef = useRef(null);
   const audioElementRef = useRef(null);
-
   const { y: currentScrollY } = useWindowScroll();
 
   useEffect(() => {
@@ -35,7 +44,6 @@ const Navbar = () => {
       setIsNavVisible(true);
       navContainerRef.current.classList.add('floating-nav');
     }
-
     setLastScrollY(currentScrollY);
   }, [currentScrollY, lastScrollY]);
 
@@ -49,7 +57,6 @@ const Navbar = () => {
 
   const toggleAudioIndicator = () => {
     setIsAudioPlaying((prev) => !prev);
-
     setIsIndicatorActive((prev) => !prev);
   };
 
@@ -66,6 +73,25 @@ const Navbar = () => {
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleMouseEnter = (label) => {
+    let iterations = 0;
+    const interval = setInterval(() => {
+      setScrambledTexts((prev) => ({
+        ...prev,
+        [label]: scrambleText(label),
+      }));
+
+      if (iterations >= 5) {
+        clearInterval(interval);
+        setScrambledTexts((prev) => ({
+          ...prev,
+          [label]: label,
+        }));
+      }
+      iterations++;
+    }, 100);
   };
 
   return (
@@ -85,9 +111,10 @@ const Navbar = () => {
                 <button
                   key={item.label}
                   onClick={() => handleNavigationClick(item.target)}
+                  onMouseEnter={() => handleMouseEnter(item.label)}
                   className="nav-hover-btn"
                 >
-                  {item.label}
+                  {scrambledTexts[item.label]}
                 </button>
               ))}
             </div>
