@@ -13,7 +13,7 @@ const Hero = () => {
   const [hasClicked, sethasClicked] = useState(false);
   const [isLoading, setisLoading] = useState(true);
   const [LoadedVideos, setLoadedVideos] = useState(0);
-  const [buttonText, setButtonText] = useState('Download CV');
+  const [buttonText, setButtonText] = useState('View CV');
 
   const totalVideos = 1;
   const nextVideoRef = useRef(null);
