@@ -13,6 +13,7 @@ const Hero = () => {
   const [hasClicked, sethasClicked] = useState(false);
   const [isLoading, setisLoading] = useState(true);
   const [LoadedVideos, setLoadedVideos] = useState(0);
+  const [buttonText, setButtonText] = useState('Download CV');
 
   const totalVideos = 1;
   const nextVideoRef = useRef(null);
@@ -35,8 +36,6 @@ const Hero = () => {
     }
   }, [LoadedVideos]);
 
-  
-
   useGSAP(() => {
     gsap.set('#video-frame', {
       clipPath: 'polygon(14% 0%, 72% 0%, 90% 90%, 0% 100%)',
@@ -55,9 +54,16 @@ const Hero = () => {
       }
     })
   })
-  
 
   const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
+
+  const handleButtonClick = () => {
+    // Open CV in a new tab
+    window.open('cv/RusiruCV.pdf', '_blank');
+    
+    // Change the button text to "View CV"
+    setButtonText('View CV');
+  };
 
   return (
     <div id="hero" className='relative h-dvh w-screen overflow-x-hidden'>
@@ -106,15 +112,10 @@ const Hero = () => {
           
             <Button 
               id="watch-trailer" 
-              title="Download CV" 
+              title={buttonText} 
               rightIcon={<PiReadCvLogo />} 
               containerClass="!bg-white flex-center gap-1"
-              onClick={() => {
-                const link = document.createElement('a');
-                link.href = 'cv/RusiruCV.pdf'; 
-                link.download = 'Rusiru_CV.pdf';
-                link.click();
-              }}
+              onClick={handleButtonClick}
             />
           
           </div>
