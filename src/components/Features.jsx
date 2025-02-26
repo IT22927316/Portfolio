@@ -280,7 +280,7 @@ const Features = () => {
                 <BentoCard
                     title={
                     <div className="flex justify-between items-center">
-                        <p className="!text-black">
+                        <p className="!text-white">
                         <Typewriter
                             options={{
                             strings: ['Education'],
