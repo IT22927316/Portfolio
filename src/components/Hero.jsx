@@ -59,7 +59,7 @@ const Hero = () => {
 
   const handleButtonClick = () => {
     // Open CV in a new tab
-    window.open('cv/RusiruCV.pdf', '_blank');
+    window.open('cv/Rusiru.CV.pdf', '_blank');
     
     // Change the button text to "View CV"
     setButtonText('View CV');
